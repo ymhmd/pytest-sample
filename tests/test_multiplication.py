@@ -2,9 +2,9 @@ import pytest
 
 items = [
     (1, 2, 2),
-    (1, 2, 20),
-    (1, 2, 2),
-    (1, 2, 4)
+    (1, 3, 3),
+    (1, 4, 4),
+    (1, 5, 5)
 ]
 
 
@@ -12,7 +12,3 @@ items = [
 def test_parameter(x, y, result):
     assert x*y == result
 
-
-@pytest.mark.math
-def test_skipp_keyword():
-    assert 1==2
